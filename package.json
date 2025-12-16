@@ -1,8 +1,11 @@
 {
-  "name": "@modelcontextprotocol/server-test-runner",
+  "name": "@iflow-mcp/server-test-runner",
   "version": "0.2.0",
   "type": "module",
   "exports": "./build/index.js",
+  "bin": {
+    "mcp-test-runner": "./build/index.js"
+  },
   "scripts": {
     "build": "tsc && chmod +x build/index.js",
     "test": "NODE_OPTIONS='--no-warnings' node --experimental-vm-modules node_modules/.bin/jest",
